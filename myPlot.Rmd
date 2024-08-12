@@ -1,0 +1,16 @@
+---
+title: "myplot"
+output: html_document
+date: "`r Sys.time()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+```
+
+```{r create_plot}
+ggplot(diamonds, aes(color, carat)) + geom_boxplot()
+
+```
+
